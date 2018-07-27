@@ -4,13 +4,13 @@ h1 {
     background-color: #4aaaa5;
     color: white;
     font-size: 29px;
-    padding: 15px;
-    width: 13%;
+    padding: 14px;
+    width: 180px;
     text-align: center;
     float: left;
     position: absolute;
-    top: 0px;
-    left: 18.5%;
+    top: -22px;
+    left: 17%;
 }
 
 header {
@@ -150,16 +150,65 @@ li {
     color: white;
     text-align: center;
     border-top: 4px solid #4aaaa5;
+    line-height: 20px;
 }
 
 h3 {
     font-size: 12px;
 }
 
-@media screen and (max-width: 980px) {
-    background-color: #666;
+@media only screen and (max-width: 980px) {
+    body {
+        width: 980px;
+}
+h1 {
+    left: 3%;
+}
+    .content {
+        width: 60%;
+        margin: 3%;
+    }
+}
+@media screen and (max-width: 768px) {
+    body {
+        width: 768px;
+    }
+    
+    .content { 
+        width: 86%;
+        margin: 3%;
+    }
 }
 
-{
+@media screen and (max-width: 640px) {
+    body {
+        width: 640px;
+    }
+    header{
+        padding: 50px 0 0 0;
+        width: 100%;
+        height: 25px;
+        position: fixed;
+       z-index: 9;
+    }
+    h1 {
+        text-align: center;
+        margin: 0;
+        padding: 5px 0;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    a {               
+        position: relative;
+        left: 35%;
+    }
     
-}
+    
+    .content {
+        width: 85%;
+        margin: 16% 3% 3% 3%;
+       
+    }
+} 
